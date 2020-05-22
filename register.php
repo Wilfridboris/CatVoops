@@ -11,7 +11,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                 $Email=$_POST['Email'];
 
                 try{
-                    $myPDO=new PDO("pgsql:host=localhost;dbname=test","postgres","VoiturE5");
+                    $myPDO=new PDO("pgsql:host=ec2-35-171-31-33.compute-1.amazonaws.com;dbname=d5fja2almvc5e8","gxduzwzaxyaymp","388a801b058ba778c16646117bfb17e0426daf5cb118552f96d9688af77741a9");
                     $myPDO->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                     $verification=$myPDO->query("INSERT INTO utilisateur(name,email,password) VALUES ('$Username','$Email','$Password')");
                     $msgError='connected';
