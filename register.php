@@ -16,7 +16,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     $verification=$myPDO->query("INSERT INTO utilisateur(name,email,password) VALUES ('$Username','$Email','$Password')");
                     $msgError='connected';
                     $msgok=true;
-                    /*
+                    
 
                     $req=$myPDO->query("SELECT * FROM utilisateur WHERE email='$Email'");
                     $req=$req->fetch(PDO::FETCH_ASSOC);
@@ -26,7 +26,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     $header="From:boriskwayep9@gmail.com" ."r\n";
 
                     mail($to,$subject,$message,$header);
-                    */
+                    
                     
                     
 
