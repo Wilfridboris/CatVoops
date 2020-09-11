@@ -18,7 +18,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     $msgError='connected';
                     $msgok=true;
                     
-
+                    /**
                     $req=$myPDO->query("SELECT * FROM utilisateur WHERE email='$Email'");
                     $emit=$req->fetch(PDO::FETCH_ASSOC);
                     $to=$emit['email'];
@@ -27,7 +27,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     $header="From:boriskwayep9@gmail.com" ."r\n";
 
                     mail($to,$subject,$message,$header);
-                    
+                    **/
                     
                     
 
