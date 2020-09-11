@@ -1,4 +1,13 @@
 <?php
+
+$to      = 'boriskwayep35@yahoo.com';
+$subject = 'Welcome To CatVops';
+$message = '<h1>Thank You for subscribing</h1>';
+$headers = "From:The Sender Name<boriskwayep9@gmail.com>\r\n";
+$headers.="Reply-To:visualinc18@gmail.com\r\n";
+$headers.="Content-Type:text/html\r\n";
+
+mail($to, $subject, $message, $headers);
 $msgok=false;
 $msgError='not loaded';
 
