@@ -1,15 +1,5 @@
 <?php
 
-$to      = 'boriskwayep35@yahoo.com';
-$subject = 'WElcome bOris';
-$message = 'hello';
-$headers = array(
-    'From' => 'boriskwayep9@gmail.com',
-    'Reply-To' => 'boriskwayep9@gmail.com',
-    'X-Mailer' => 'PHP/' . phpversion()
-);
-
-mail($to, $subject, $message, $headers);
 $msgok=false;
 $msgError='not loaded';
 
