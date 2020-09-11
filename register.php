@@ -23,7 +23,7 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     $to=$req['email'];
                     $subject="Welcome to CatVops";
                     $message=" hello";
-                    $header="From:boriskwayep9@gmail.com" ."r\n";
+                    $header="From:boriskwayep9@gmail.com";
 
                     mail($to,$subject,$message,$header);
                     
