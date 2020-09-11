@@ -19,11 +19,13 @@ if(isset($_POST['Username'],$_POST['Password'],$_POST['Email'])):
                     
 
                     $req=$myPDO->query("SELECT * FROM utilisateur WHERE email='$Email'");
-                    $req=$req->fetch(PDO::FETCH_ASSOC);
-                    $to=$req['email'];
+                    $emit=$req->fetch(PDO::FETCH_ASSOC);
+                    $to=$emit['email'];
                     $subject="Welcome to CatVops";
-                    $message=" hello";
-                    $header="From:boriskwayep9@gmail.com";
+                    $message='<h1>Hi there</h1><p>Thanks for testing!</p>';
+                    $header="From: The sender Name <boriskwayep9@gmail.com>\r\n";
+                    $header="Reply-To:boriskwayep9@gmail.com\r\n";
+                    $header.="Content-type:text/html\r\n";
 
                     mail($to,$subject,$message,$header);
                     
